@@ -12,5 +12,5 @@ import (
 func main() {
 	fmt.Println("This program displays the current time!") 
 
-	fmt.Println("The time is", time.Now()) // Printd thr current time to the console
+	fmt.Println("The time is", time.Now()) // Prints the current time to the console
 }
