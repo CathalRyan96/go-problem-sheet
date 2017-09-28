@@ -3,12 +3,14 @@
 package main
 
 import (
-	"fmt"
-	"time"
+	"fmt" // imports fmt package which implements formatted I/O
+
+	"time" // imports time package that provides funcionality for measuring and displaying time
+	
 )
 
 func main() {
-	fmt.Println("This program displays the current time!")
+	fmt.Println("This program displays the current time!") 
 
-	fmt.Println("The time is", time.Now())
+	fmt.Println("The time is", time.Now()) // Printd thr current time to the console
 }
