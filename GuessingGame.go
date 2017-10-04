@@ -11,12 +11,12 @@ func xrand(min, max int) int {
 }
 
 func main () {
-    var name string
-    myrand := xrand(1,6)
+    
+    myrand := xrand(1,10)
 	userGuess := 0
 	var guess int
 
-	fmt.Println("Guess a number between 1 and 6.")
+	fmt.Println("Guess a number between 1 and 10")
 
 	for userGuess <6 {
 		fmt.Println("Guess a number!")
@@ -26,5 +26,20 @@ func main () {
 		if guess < myrand{
 			fmt.Println("Your guess is too low")
 		}
+
+		if guess > myrand {
+			fmt.Println("Your guess is too high")
+		}
+		
+		if guess== myrand {
+			fmt.Printf("Correct!, That is the number, It took you %d tries\n",userGuess)
+			break
+		}
+
+		
+
+		
+
+		
 	}
 }
