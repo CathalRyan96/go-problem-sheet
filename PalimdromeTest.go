@@ -15,9 +15,10 @@ func main () {
 	
 }
 
+//Function to delcare whether the string is a palidrome 
 func isP(s string) string{
-	mid := len(s) / 2
-	last := len(s) - 1
+	mid := len(s) / 2  //initialized a mid variable that is half the he length of the string
+	last := len(s) - 1 // initialized a last variable that is the length of the string - 1
 
 	for i := 0; i< mid; i++ {
 		if s[i] != s[last-i]{
